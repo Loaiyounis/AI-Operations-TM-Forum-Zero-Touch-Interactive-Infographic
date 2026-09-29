@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI Operations & TM Forum Zero-Touch — Infographic</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f3f5fb;--card:#fff;--fg:#121a33;--mut:#5a6486;--line:#dde2f0;--a:#2563eb;--b:#7c3aed;--c:#db2777;--d:#059669;--e:#d97706;--f:#0891b2}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0f20;--card:#121a34;--fg:#e8ecff;--mut:#9aa4cc;--line:#252f58;--a:#60a5fa;--b:#a78bfa;--c:#f472b6;--d:#34d399;--e:#fbbf24;--f:#22d3ee}}
+:root[data-theme="dark"]{--bg:#0a0f20;--card:#121a34;--fg:#e8ecff;--mut:#9aa4cc;--line:#252f58;--a:#60a5fa;--b:#a78bfa;--c:#f472b6;--d:#34d399;--e:#fbbf24;--f:#22d3ee}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5}
+header{background:linear-gradient(135deg,#0f172a,#4c1d95 55%,#be185d);color:#fff;text-align:center;padding:46px 18px 38px}
+.tag{display:inline-block;font-weight:800;font-size:12px;letter-spacing:.18em;background:rgba(255,255,255,.15);padding:4px 12px;border-radius:99px}
+h1{margin:12px 0 8px;font-size:clamp(26px,5.5vw,42px);line-height:1.15}
+header p{margin:0 auto;max-width:640px;opacity:.88}
+.pills{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:18px}
+.pills b{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:99px;padding:5px 14px;font-size:13px}
+main{max-width:960px;margin:0 auto;padding:22px 14px 40px}
+section{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;margin-bottom:22px}
+.num{display:inline-block;background:var(--b);color:#fff;border-radius:8px;padding:1px 10px;font-weight:800;margin-right:8px;font-size:15px}
+h2{margin:0 0 6px;font-size:21px}
+.sub{color:var(--mut);margin:0 0 16px;font-size:14.5px}
+/* loop */
+.loop svg{width:100%;max-width:520px;margin:0 auto;display:block;height:auto}
+.loop text{font-family:inherit;text-anchor:middle;fill:var(--fg)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;margin-top:14px}
+.st{border:1px solid var(--line);border-left:5px solid var(--k);border-radius:10px;padding:10px 12px;font-size:13.5px}
+.st b{display:block;color:var(--k)}
+.st span{color:var(--mut)}
+/* levels */
+.lv{display:flex;align-items:flex-end;gap:8px;overflow-x:auto;padding-bottom:6px}
+.lv div{flex:1 0 118px;border-radius:12px 12px 0 0;padding:10px;color:#fff;background:var(--k);font-size:12.5px;min-height:var(--h)}
+.lv b{font-size:22px;display:block}
+.lv small{display:block;opacity:.92;margin-top:4px}
+.who{display:flex;justify-content:space-between;color:var(--mut);font-size:12px;margin-top:8px}
+/* matrix */
+.mx{overflow-x:auto}
+table{border-collapse:separate;border-spacing:6px;width:100%;min-width:640px;font-size:12.5px}
+th{font-size:12.5px;padding:8px;border-radius:8px;color:#fff;background:var(--k)}
+td{background:color-mix(in srgb,var(--k) 12%,var(--card));border:1px solid var(--line);border-radius:8px;padding:8px}
+td:first-child{font-weight:700;background:none;border:0;padding-left:0}
+/* 3z */
+.z{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.zc{border-radius:14px;padding:16px;color:#fff;background:var(--k)}
+.zc h3{margin:0 0 4px;font-size:19px}
+.zc p{margin:0 0 8px;font-size:13.5px;opacity:.95}
+.zc li{font-size:13px;margin-left:16px}
+/* roadmap */
+.rm{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.rc{border:1px solid var(--line);border-top:5px solid var(--k);border-radius:12px;padding:12px;font-size:13.5px}
+.rc h3{margin:0 0 6px;font-size:15px;color:var(--k)}
+.rc li{margin-left:16px;color:var(--mut)}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:14px}
+.kp div{background:color-mix(in srgb,var(--k) 12%,var(--card));border-radius:12px;padding:12px;text-align:center}
+.kp b{font-size:24px;color:var(--k);display:block}
+.kp span{font-size:12px;color:var(--mut)}
+footer{text-align:center;color:var(--mut);font-size:12.5px;padding:0 14px 30px}
+.ctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0 8px;font-size:13px}
+.ctl button{cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:99px;padding:6px 14px;font:inherit;font-weight:700}
+.ctl button.on{background:var(--b);color:#fff;border-color:var(--b)}
+.ctl #run{background:var(--d);color:#fff;border-color:var(--d)}
+.hint{color:var(--mut);font-size:12.5px;margin:0 0 4px}
+.pn{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-top:8px;font-size:14px}
+.pn h3{margin:0 0 4px;font-size:16px}.pn em{font-size:12px;color:var(--b);margin-left:6px;font-style:normal}
+.pn p{margin:2px 0;color:var(--mut)}
+.bars{margin-top:10px;font-size:12px}
+.bar{display:flex;align-items:center;gap:8px;margin:4px 0}.bar span:first-child{width:22px;font-weight:700}
+.bar i{display:block;height:14px;border-radius:7px;background:var(--mut);opacity:.45;transition:width .4s}
+.bar.on i{background:var(--b);opacity:1}
+#stt{font-weight:700;margin-top:8px;min-height:22px}
+.lv div{cursor:pointer;transition:transform .2s}.lv div:hover{transform:translateY(-4px)}
+.lv div.on{outline:3px solid var(--fg);outline-offset:2px}
+.st{cursor:pointer}.st:hover{background:color-mix(in srgb,var(--k) 10%,var(--card))}
+.pg{height:10px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:6px}
+#pgb{height:100%;width:0;background:var(--d);transition:width .3s}
+.rc li{list-style:none;margin-left:0}.rc label{cursor:pointer;display:flex;gap:6px;align-items:flex-start}
+.rc input:checked+span{text-decoration:line-through;opacity:.6}
+td:not(:first-child):hover{outline:2px solid var(--k)}
+</style>
+</head>
+<body>
+<header><span class="tag">AI OPERATIONS · AUTONOMOUS NETWORKS</span>
+<h1>From Manual Ops to Zero-Touch AI Operations</h1>
+<p>How AI-driven operations work, and how TM Forum's Autonomous Networks framework guides the journey from L0 to L5.</p>
+<div class="pills"><b>Zero-Wait</b><b>Zero-Touch</b><b>Zero-Trouble</b></div></header>
+<main>
+
+<section class="loop"><h2><span class="num">1</span>The AI Operations Loop</h2>
+<p class="sub">Every AI-driven operation follows the same closed loop. Autonomy grows as more steps run without a human.</p>
+<svg id="lp" viewBox="0 0 520 440" role="img" aria-label="AI operations closed loop"></svg>
+<div class="steps" id="stp"></div></section>
+
+<section><h2><span class="num">2</span>TM Forum Autonomous Network Levels (L0–L5)</h2>
+<p class="sub">The industry scale for how much of the operation is executed by the system instead of people.</p>
+<div class="lv" id="lv"></div>
+<div class="who"><span>← Human does the work</span><span>System does the work →</span></div></section>
+
+<section><h2><span class="num">3</span>Closed-Loop Autonomy Across Layers</h2>
+<p class="sub">Autonomy is built per layer: business, service and resource operations each run their own closed loop, linked by intent.</p>
+<div class="mx"><table id="mx"></table></div></section>
+
+<section><h2><span class="num">4</span>The Zero-Touch Vision: 3Z</h2>
+<p class="sub">TM Forum's ambition for customers, partners and operations teams.</p>
+<div class="z" id="z"></div></section>
+
+<section><h2><span class="num">5</span>Roadmap for L0/L1 Operations Teams</h2>
+<p class="sub">Practical steps to move from manual and assisted operations towards conditional autonomy (L3).</p>
+<div class="rm" id="rm"></div>
+<div class="kp" id="kp"></div></section>
+</main>
+<footer>Simplified educational infographic based on the TM Forum Autonomous Networks framework.</footer>
+<script>
+const $=id=>document.getElementById(id);
+const S=[['Collect','Telemetry, alarms, logs, KPIs, topology','--a'],['Detect','Anomaly detection and early warnings','--b'],['Correlate','Group alarms, find the root cause','--c'],['Decide','Choose the best action, policy and risk check','--e'],['Act','Automated remediation, config or ticket','--d'],['Learn','Verify the result and retrain the models','--f']];
+(function(){let o='<circle cx="260" cy="215" r="150" fill="none" stroke="var(--line)" stroke-width="3" stroke-dasharray="7 7"/><text x="260" y="208" font-size="20" font-weight="800">AI OPS</text><text x="260" y="230" font-size="12" style="fill:var(--mut)">closed loop</text>';
+S.forEach((s,i)=>{const a=(i*60-90)*Math.PI/180,x=260+150*Math.cos(a),y=215+150*Math.sin(a);
+o+=`<circle cx="${x}" cy="${y}" r="38" fill="var(${s[2]})"/><text x="${x}" y="${y+5}" font-size="13" font-weight="700" style="fill:#fff">${s[0]}</text><text x="${x+(x>260?46:-46)*(Math.abs(x-260)<5?0:1)}" y="${y+(Math.abs(x-260)<5?(y<215?-46:56):-42)}" font-size="11" style="fill:var(--mut)">${i+1}</text>`;
+const b=((i+1)*60-90)*Math.PI/180,m=(a+b)/2,mx=260+150*Math.cos(m),my=215+150*Math.sin(m),r=m+Math.PI/2*1;
+o+=`<polygon points="0,-7 12,0 0,7" fill="var(--mut)" transform="translate(${mx},${my}) rotate(${(m+Math.PI/2)*180/Math.PI})"/>`;});
+$('lp').innerHTML=o;
+$('stp').innerHTML=S.map((s,i)=>`<div class="st" style="--k:var(${s[2]})"><b>${i+1}. ${s[0]}</b><span>${s[1]}</span></div>`).join('')})();
+const L=[['L0','Manual Operation','Humans run everything; tools only give data','--ex'],['L1','Assisted Operation','System runs repetitive tasks; humans decide','--a'],['L2','Partial Autonomous','Closed loop for selected units','--f'],['L3','Conditional Autonomous','System senses and adapts; humans supervise','--d'],['L4','Highly Autonomous','Closed loop across domains; humans set intent','--e'],['L5','Fully Autonomous','Fully self-operating, self-optimizing','--c']];
+$('lv').innerHTML=L.map((l,i)=>`<div style="--k:var(${l[3]==='--ex'?'--mut':l[3]});--h:${110+i*38}px"><b>${l[0]}</b>${l[1]}<small>${l[2]}</small></div>`).join('');
+const cols=[['Business Ops','--b'],['Service Ops','--a'],['Resource Ops','--d']];
+const rows=[['Intent','Business goals, SLAs and policies','Service quality targets per slice','Resource and capacity constraints'],['Awareness','Customer experience and revenue signals','Service KPIs and impact detection','Alarms, telemetry and topology'],['Analysis','Predict churn and demand','Root cause of service degradation','Fault and anomaly correlation'],['Decision','Prioritize by business value','Choose the service fix or reroute','Select the remediation action'],['Execution','Trigger service orders and offers','Orchestrate service changes','Push config, restart, scale']];
+$('mx').innerHTML='<tr><th style="background:none"></th>'+cols.map(c=>`<th style="--k:var(${c[1]})">${c[0]}</th>`).join('')+'</tr>'+rows.map(r=>'<tr><td>'+r[0]+'</td>'+r.slice(1).map((t,i)=>`<td style="--k:var(${cols[i][1]})">${t}</td>`).join('')+'</tr>').join('');
+const Z=[['Zero-Wait','For customers','Instant activation and self-service.',['Order-to-service in minutes','Intent-based self-service','Digital, real-time onboarding'],'--a'],['Zero-Touch','For operations','Processes run without manual steps.',['Auto-provisioning','Self-healing and self-optimizing','Humans manage exceptions'],'--b'],['Zero-Trouble','For experience','Problems are prevented before customers notice.',['Predictive fault detection','Proactive fixes','Assured service quality'],'--c']];
+$('z').innerHTML=Z.map(z=>`<div class="zc" style="--k:var(${z[4]})"><h3>${z[0]}</h3><p><b>${z[1]}:</b> ${z[2]}</p><ul>${z[3].map(x=>'<li>'+x+'</li>').join('')}</ul></div>`).join('');
+const R=[['1 · Digitize (L0→L1)',['Centralize alarms and KPIs','Standardize runbooks','Automate repetitive tickets'],'--a'],['2 · Correlate (L1→L2)',['Alarm correlation and RCA','Topology and inventory accuracy','AI-assisted triage'],'--f'],['3 · Automate (L2→L3)',['Closed loops for low-risk faults','Guardrails and rollback','Human approval for high risk'],'--d'],['4 · Optimize (L3+)',['Predictive maintenance','Intent-driven operations','Continuous model retraining'],'--e']];
+$('rm').innerHTML=R.map(r=>`<div class="rc" style="--k:var(${r[2]})"><h3>${r[0]}</h3><ul>${r[1].map(x=>'<li>'+x+'</li>').join('')}</ul></div>`).join('');
+const K=[['MTTD','Time to detect','--a'],['MTTR','Time to resolve','--c'],['% Auto-resolved','Tickets closed without touch','--d'],['Alarm reduction','Noise removed by correlation','--b'],['First-time-right','Changes with no rework','--e']];
+$('kp').innerHTML=K.map(k=>`<div style="--k:var(${k[2]})"><b>${k[0]}</b><span>${k[1]}</span></div>`).join('');
+/* ===== Interactivity ===== */
+const D=[['Pull telemetry, alarms, logs and KPIs from every domain.','streaming telemetry, syslog, SNMP/gNMI'],['Spot anomalies and threshold breaches before customers call.','ML anomaly detection, baselines'],['Group related alarms and locate the root cause.','topology-aware correlation, RCA'],['Pick the best action and check risk and policy.','policy engine, risk scoring, approvals'],['Execute the fix or open the right ticket.','orchestrator, automation playbooks'],['Verify the outcome and feed results back to the models.','KPI verification, model retraining']];
+const M=[[0,0,0,0,0,0],[2,1,0,0,0,0],[2,2,1,0,1,0],[2,2,2,1,2,0],[2,2,2,2,2,1],[2,2,2,2,2,2]];
+const T=[[10,20,40,15,30,20],[5,10,20,8,15,10],[1,1,2,1,2,1]];
+const MN=['Human-led','AI-assisted, human approves','Fully automated'],IC=['👤','🤝','⚙️'];
+const tot=l=>M[l].reduce((s,m,i)=>s+T[m][i],0);
+let lv=1,sel=0,busy=false;
+$('lp').insertAdjacentHTML('afterend','<div class="ctl" id="ctl"><b>Autonomy level:</b>'+[0,1,2,3,4,5].map(l=>`<button data-l="${l}">L${l}</button>`).join('')+'<button id="run">▶ Run incident</button></div><p class="hint">Click a level, a loop step, or run a simulated incident. 👤 human · 🤝 AI-assisted · ⚙️ automated. Times are illustrative.</p><div class="pn" id="pn"></div><div id="stt"></div><div class="bars" id="bars"></div>');
+const nodes=[...$('lp').querySelectorAll('circle[r="38"]')],bd=[];
+nodes.forEach((c,i)=>{const t=document.createElementNS('http://www.w3.org/2000/svg','text');
+ t.setAttribute('x',+c.getAttribute('cx')+30);t.setAttribute('y',+c.getAttribute('cy')-28);t.setAttribute('font-size','18');
+ c.parentNode.appendChild(t);bd[i]=t;c.style.cursor='pointer';c.onclick=()=>pick(i);c.nextElementSibling.style.pointerEvents='none'});
+[...$('stp').children].forEach((e,i)=>e.onclick=()=>pick(i));
+[...$('lv').children].forEach((e,i)=>e.onclick=()=>setLv(i));
+document.querySelectorAll('#ctl [data-l]').forEach(b=>b.onclick=()=>setLv(+b.dataset.l));
+$('run').onclick=run;
+function paint(){nodes.forEach((c,i)=>{const m=M[lv][i],col=c.getAttribute('fill');
+ c.style.fill=m==2?col:m==1?`color-mix(in srgb,${col} 55%,var(--card))`:'var(--card)';
+ c.style.stroke=col;c.style.strokeWidth=i==sel?7:3;
+ c.nextElementSibling.style.fill=m==0?'var(--fg)':'#fff';bd[i].textContent=IC[m]})}
+function panel(){const m=M[lv][sel];$('pn').innerHTML=`<h3>${sel+1}. ${S[sel][0]} <em>${MN[m]} at L${lv}</em></h3><p>${D[sel][0]}</p><p><b>Typical tools:</b> ${D[sel][1]} · <b>Time:</b> ~${T[m][sel]} min</p>`}
+function bars(){$('bars').innerHTML='<b>Total incident time by level</b>'+[0,1,2,3,4,5].map(l=>`<div class="bar${l==lv?' on':''}"><span>L${l}</span><i style="width:${tot(l)/135*70}%"></i><span>${tot(l)} min</span></div>`).join('')}
+function kpi(){const k=$('kp').children,m=M[lv],t=T,h=[0,20,45,65,80,90][lv],f=[60,70,80,90,95,98][lv],au=Math.round(m.filter(x=>x==2).length/6*100);
+ const v=[t[m[0]][0]+t[m[1]][1]+' min',tot(lv)+' min',au+'%',h+'%',f+'%'],n=['MTTD · time to detect','MTTR · time to resolve','Auto-resolved steps','Alarm noise reduction','First-time-right changes'];
+ [...k].forEach((e,i)=>{e.querySelector('b').textContent=v[i];e.querySelector('span').textContent=n[i]})}
+function setLv(n){if(busy)return;lv=n;document.querySelectorAll('#ctl [data-l]').forEach(b=>b.classList.toggle('on',+b.dataset.l==n));
+ [...$('lv').children].forEach((e,i)=>e.classList.toggle('on',i==n));$('stt').textContent='';paint();panel();bars();kpi()}
+function pick(i){if(busy)return;sel=i;paint();panel()}
+async function run(){if(busy)return;busy=true;let s=0;$('run').disabled=true;
+ for(let i=0;i<6;i++){sel=i;const m=M[lv][i];paint();panel();$('stt').textContent=`Step ${i+1}/6 · ${S[i][0]} ${IC[m]} · ${s} min elapsed`;await new Promise(r=>setTimeout(r,900));s+=T[m][i]}
+ $('stt').textContent=`✅ Incident resolved in ${s} min at L${lv} (L0 baseline: ${tot(0)} min, ${Math.round((1-s/tot(0))*100)}% faster)`;busy=false;$('run').disabled=false}
+setLv(1);
+/* roadmap checklist */
+document.querySelectorAll('#rm li').forEach(li=>{li.innerHTML=`<label><input type="checkbox"><span>${li.textContent}</span></label>`});
+$('rm').insertAdjacentHTML('beforebegin','<div class="pg"><div id="pgb"></div></div><p class="hint" id="pgt"></p>');
+function prog(){const a=[...document.querySelectorAll('#rm input')],d=a.filter(x=>x.checked).length;$('pgb').style.width=d/a.length*100+'%';$('pgt').textContent=`Readiness checklist: ${d} of ${a.length} steps done`}
+document.querySelectorAll('#rm input').forEach(x=>x.onchange=prog);prog();
+</script>
+</body>
+</html>
